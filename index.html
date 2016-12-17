@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
 xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD><META 
 content="IE=11.0000" http-equiv="X-UA-Compatible">
@@ -25,6 +25,7 @@ Story</TITLE>
 		 
 <SCRIPT src="love.js" type="text/javascript" charset="utf-8"></SCRIPT>
 	     
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <STYLE type="text/css">
 <!--
 .STYLE1 {color: #666666}
@@ -39,21 +40,23 @@ Story</TITLE>
 href="http://firefox.com.cn/download/">Firefox</A>)浏览器，或者其他游览器的最新版本。</DIV>
 <DIV id="wrap">
 <DIV id="text">
-<DIV id="code"><SPAN class="say">* Our Story</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say"> Our Story  我们的故事</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 不经意相识, 或许是缘分，或许是注定的。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 以后不管有怎么样，我都会在。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 就算全世界都都抛弃你，记得还有我。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 再累都不用害怕，因为你有我。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 记得在你最需要的时候想起我。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// 我会一直陪着你。</SPAN><BR><SPAN 
-class="say"></SPAN><BR><SPAN class="say">// You are my only 
-girl..永远..</SPAN><BR><SPAN class="say"></SPAN><BR><SPAN class="say"><SPAN class="space"></SPAN> 
--- Cxsir--</SPAN>			         </DIV></DIV>
+<DIV id="code" style="font-family: '楷体'"><SPAN class="say">* Our Story</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 有一天</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 一个小姑娘问我</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 如果遇到蠢姑娘发脾气怎么办</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 我想了想，说</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 那就宠着她</SPAN><BR><SPAN 
+class="say"></SPAN><BR><SPAN class="say"> 把她培养成只有我能忍受的小公主就好啦~</SPAN><BR>
+<BR><SPAN class="space"></SPAN> 
+                        ———— <div style="
+    display: inline;
+    font-size: 32px;
+">马翔</div> </SPAN>			         </DIV></DIV>
 <DIV id="clock-box" style="font-family: '楷体'">刘邦宁<SPAN class="STYLE1">与</SPAN>马翔<SPAN 
-class="STYLE1">已经相恋了</SPAN>                   
+class="STYLE1">已经相恋</SPAN>                   
 <DIV id="clock"></DIV></DIV><CANVAS width="1100" height="680" 
-id="canvas"></CANVAS>             </DIV></DIV>
+id="canvas"></CANVAS> 
+           <div id="people" style="display:none"> <span id="busuanzi_container_site_pv">访问人数：<span id="busuanzi_value_site_pv"></span></span>   </div>         </DIV></DIV>
 <SCRIPT></SCRIPT>
      
 <SCRIPT>
@@ -113,6 +116,7 @@ id="canvas"></CANVAS>             </DIV></DIV>
         var hold = 1;
 
         canvas.click(function(e) {
+			document.getElementById("people").style.display=""
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
